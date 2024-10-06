@@ -1,2 +1,17 @@
 server:
   port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://user:password@localhost:27017/chatdb
+logging:
+  level:
+    com:
+      varc:
+        sampleserver: DEBUG
+    org:
+      springframework:
+        messaging: DEBUG
+        web:
+          socket: DEBUG
